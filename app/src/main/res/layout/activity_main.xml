@@ -15,6 +15,13 @@
         android:textSize="35dp"
         android:layout_gravity="center"
         android:padding="40dp"/>
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Write Message"/>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

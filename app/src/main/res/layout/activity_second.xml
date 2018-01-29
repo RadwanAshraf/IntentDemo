@@ -10,18 +10,65 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MainActivity!"
+        android:text="SecondActivity!"
         android:textAllCaps="false"
         android:textSize="35dp"
         android:layout_gravity="center"
-        android:padding="40dp"/>
-    <Button
+        android:padding="5dp"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/B_MainActivity"
         android:layout_gravity="center"
-        android:text="Main Activity"
+        android:text="Your message is :"
         android:textSize="22dp"
-        android:layout_marginTop="90dp"/>
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#339912"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Student Data :  (Serializable example)"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tV_Stud"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#99b608"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Person Data :  (Parcelable example)"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tV_Person"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#99b608"/>
 
 </LinearLayout>
