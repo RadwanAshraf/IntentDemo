@@ -42,6 +42,7 @@ public class Person implements Parcelable {
     }
 
     public static final Parcelable.Creator<Person> CREATOR=new Parcelable.Creator<Person>() {
+
         @Override
         public Person createFromParcel(Parcel parcel) {
             return new Person(parcel);
