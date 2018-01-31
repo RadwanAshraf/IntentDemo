@@ -29,7 +29,7 @@ public class SecondActivity extends AppCompatActivity {
         textView.setText(intent.getStringExtra("key"));
 
 
-        //set student data
+        //set student Data to view
 
         Student student;
         student=(Student)getIntent().getSerializableExtra("student");
@@ -39,13 +39,14 @@ public class SecondActivity extends AppCompatActivity {
                       +"ID : "+student.getStudID()+"\n"
                       +"Grade : "+student.getStudGrade()+"\n");
 
+
         //set person Data
 
         Person person;
         person =getIntent().getParcelableExtra("person");
 
 
-        tVPer.setText("Name : "+person.firstName+"\n"
+        tVPer.setText("Name : "+person.getFirstName()+"\n"
                 +"Job : "+person.getJob()+"\n"
                 +"Age : "+person.getAge()+"\n");
 

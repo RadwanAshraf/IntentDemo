@@ -9,9 +9,10 @@ import android.os.Parcelable;
 
 public class Person implements Parcelable {
 
-    String firstName;
-    String job;
-    int age;
+    private String firstName;
+    private String job;
+    private int age;
+
 
 
     public Person(Parcel parcel) {
@@ -31,6 +32,7 @@ public class Person implements Parcelable {
         return 0;
     }
 
+    //initialize parcel
     @Override
     public void writeToParcel(Parcel parcel, int i) {
 
@@ -39,7 +41,7 @@ public class Person implements Parcelable {
         parcel.writeInt(this.age);
     }
 
-    public static final Creator<Person> CREATOR=new Creator<Person>() {
+    public static final Parcelable.Creator<Person> CREATOR=new Parcelable.Creator<Person>() {
         @Override
         public Person createFromParcel(Parcel parcel) {
             return new Person(parcel);

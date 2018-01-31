@@ -10,10 +10,10 @@ import java.lang.annotation.Documented;
 public class Student implements Serializable{
 
 
-    String studName;
-    String studDepartment;
-    int studID;
-    Double studGrade;
+    private String studName;
+    private String studDepartment;
+    private int studID;
+    private Double studGrade;
 
 
     public Student(String studName, String studDepartment, int studID, Double studGrade) {
@@ -27,34 +27,16 @@ public class Student implements Serializable{
         return studName;
     }
 
-    public void setStudName(String studName) {
-        this.studName = studName;
-    }
-
     public String getStudDepartment() {
         return studDepartment;
-    }
-
-    public void setStudDepartment(String studDepartment) {
-        this.studDepartment = studDepartment;
     }
 
     public int getStudID() {
         return studID;
     }
 
-    public void setStudID(int studID) {
-        this.studID = studID;
-    }
-
     public Double getStudGrade() {
         return studGrade;
     }
-
-    public void setStudGrade(Double studGrade) {
-        this.studGrade = studGrade;
-    }
-
-
 
 }
